@@ -76,8 +76,33 @@ class _CarDetailState extends State<CarDetail> {
             widget.brand,
             style: BodyHeading,
           ),
-          Hero(tag: widget.title, child: Image.asset(widget.path)),
-          SizedBox(height: 10),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 18.0),
+            child: Container(
+              decoration: BoxDecoration(
+                // border: Border.all(color: Theme.of(context).accentColor, width: 1),
+                borderRadius: BorderRadius.circular(20),
+                color: Colors.white,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.blueGrey,
+                    offset: Offset(5.0, 5.0),
+                    blurRadius: 5.0,
+                  )
+                ],
+              ),
+              child: ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: Image.asset(widget.path)),
+            ),
+          ),
+          SizedBox(height: 20),
+          Text(
+            'RATES',
+            style: TextStyle(
+                color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 20),
+          ),
+          SizedBox(height: 20),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [

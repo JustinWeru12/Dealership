@@ -1,10 +1,10 @@
-# dealership
+# Dealership
 
-A new Flutter project.
+A Car Dealership project designed with Flutter.
 
-## Getting Started
+## Screenshots of pages
 
-This project is a starting point for a Flutter application.
+## Getting Started with Flutter
 
 A few resources to get you started if this is your first Flutter project:
 

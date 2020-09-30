@@ -2,7 +2,12 @@ import 'package:dealership/utils/utils.dart';
 import 'package:flutter/material.dart';
 import '../widgets/cars_grid.dart';
 
-class CarsOverviewScreen extends StatelessWidget {
+class CarsOverviewScreen extends StatefulWidget {
+  @override
+  _CarsOverviewScreenState createState() => _CarsOverviewScreenState();
+}
+
+class _CarsOverviewScreenState extends State<CarsOverviewScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
