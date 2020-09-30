@@ -68,7 +68,7 @@ CarsList allCars = CarsList(cars: [
       fuel: '6L',
       brand: 'BMW',
       path: 'assets/car6.jpg'),
-      CarItem(
+  CarItem(
       title: 'Honda Civic 2019',
       price: 130,
       color: 'Grey',

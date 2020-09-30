@@ -15,14 +15,23 @@ class SpecificsCard extends StatelessWidget {
       height: price == null ? 80 : 100,
       width: 100,
       decoration: BoxDecoration(
-          border: Border.all(color: Colors.grey, width: 1),
-          borderRadius: BorderRadius.circular(10)),
+        // border: Border.all(color: Theme.of(context).accentColor, width: 1),
+        borderRadius: BorderRadius.circular(20),
+        color: Colors.white,
+        boxShadow: [
+          BoxShadow(
+            color: Colors.blueGrey,
+            offset: Offset(5.0, 5.0),
+            blurRadius: 5.0,
+          )
+        ],
+      ),
       child: price == null
           ? Column(
               children: [
                 Text(
                   name,
-                  style: BasicHeading,
+                  style: BodyHeading,
                 ),
                 SizedBox(
                   height: 5,
@@ -37,7 +46,7 @@ class SpecificsCard extends StatelessWidget {
               children: [
                 Text(
                   name,
-                  style: BasicHeading,
+                  style: BodyHeading,
                 ),
                 SizedBox(
                   height: 5,

@@ -44,7 +44,7 @@ class CarsGrid extends StatelessWidget {
                           topRight: Radius.circular(10.0)),
                       child: Image.asset(allCars.cars[i].path)),
                   Text(
-                    allCars.cars[i].title+'\n',
+                    allCars.cars[i].title,
                     style: BasicHeading,
                   ),
                   Text((allCars.cars[i].price).toString(), style: SubHeading),

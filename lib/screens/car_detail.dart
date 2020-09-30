@@ -45,6 +45,7 @@ class _CarDetailState extends State<CarDetail> {
       key: _scaffoldKey,
       appBar: AppBar(
         elevation: 0,
+        iconTheme: IconThemeData(color: Theme.of(context).accentColor),
         actions: [
           IconButton(
               onPressed: () {
@@ -59,7 +60,13 @@ class _CarDetailState extends State<CarDetail> {
               },
               icon: Icon(iconData,
                   size: 30, color: Theme.of(context).accentColor)),
-          IconButton(onPressed: null, icon: Icon(Icons.share, size: 30)),
+          IconButton(
+              onPressed: null,
+              icon: Icon(
+                Icons.share,
+                size: 30,
+                color: Theme.of(context).accentColor,
+              )),
         ],
       ),
       body: Column(
@@ -67,19 +74,20 @@ class _CarDetailState extends State<CarDetail> {
           Text(widget.title, style: MainHeading),
           Text(
             widget.brand,
-            style: BasicHeading,
+            style: BodyHeading,
           ),
           Hero(tag: widget.title, child: Image.asset(widget.path)),
+          SizedBox(height: 10),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               SpecificsCard(
-                name: '12 Month',
+                name: '12 Months',
                 price: widget.price * 12,
                 name2: 'Dollars',
               ),
               SpecificsCard(
-                name: '6 Month',
+                name: '6 Months',
                 price: widget.price * 6,
                 name2: 'Dollars',
               ),
@@ -114,7 +122,7 @@ class _CarDetailState extends State<CarDetail> {
               )
             ],
           ),
-          SizedBox(height: 10),
+          SizedBox(height: 20),
           RaisedButton(
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
