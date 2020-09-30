@@ -4,6 +4,10 @@ A Car Dealership project designed with Flutter.
 
 ## Screenshots of pages
 
+|SplashScreen|Home|Car Detail|
+| ------------- | ------------- | ------------- |
+|<img src="https://github.com/JustinWeru12/Dealership/blob/master/assets/247.png" width="400px" height="auto">|<img src="https://github.com/JustinWeru12/Dealership/blob/master/assets/201.png" width="400px" height="auto">|<img src="https://github.com/JustinWeru12/Dealership/blob/master/assets/220.png" width="400px" height="auto">|
+
 ## Getting Started with Flutter
 
 A few resources to get you started if this is your first Flutter project:
